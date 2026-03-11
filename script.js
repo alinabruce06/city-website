@@ -7,6 +7,9 @@ function compareInputs() {
     const val2 = document.getElementById("confirmEmail").value.trim();
 
     if (val1 !== val2) {
-        window.alert("Emails do not match.");
+        window.alert("Emails do not match. This contact form is just for show anyways.");
+    } else {
+        window.alert("Nice try! This contact form is just for show.")
+    }
     }
 }
