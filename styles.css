@@ -7,15 +7,15 @@
 }
 
 * p,li {
-    font-size:1.1vw;
+    font-size: clamp(14px, 1.1vw, 18px);
 }
 
 * h2 {
-    font-size:2vw;
+    font-size: clamp(20px, 2vw, 32px);
 }
 
 * h3 {
-    font-size:1.4vw;
+    font-size: clamp(16px, 1.4vw, 22px);
 }
 [aria-current="page"] {
     text-decoration: underline;
@@ -39,7 +39,9 @@ a:hover {
 button {
     color:white;
     background-color: var(--accent-color);
-    width:10vw;
+    width:auto;
+    min-width: 120px;
+    padding: 0.5rem 1rem;
 }
 
 button:hover {
@@ -235,4 +237,48 @@ main.main-details {
     background-color: var(--bg-color);
     padding:1vw;
     margin-left:10vw;
+}
+
+@media (max-width: 768px){
+    nav ul { 
+        padding: 0; 
+    }
+    nav li { 
+        display: block; 
+        margin: 6px 0; 
+    }
+    .dropdown-content { 
+        postition: static; 
+        box-shadow: none; 
+    }
+    .grid-container-home { 
+        grid-template-columns: 1fr;
+    }
+    #about { 
+        grid-column: 1; 
+    }
+    main.grid-container-home img { 
+        max-width: 90vw; 
+    }
+    .grid-container-form { 
+        grid-template-columns: 1fr; 
+        padding: 0 1rem; 
+    }
+    .grid-item-label { 
+        text-alight:left; 
+    }
+    form button {
+        margin: 1rem 0 0 0;
+    }
+    #parent {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    #child {
+        position: static;
+        width: 100%;
+        left: auto;
+        margin: 0;
+    }
 }
