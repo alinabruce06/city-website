@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cities of North Carolina</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, intitial-scale=1.0">
+        <!-- Link to external CSS for all -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="assets\nc_flag.png">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="grid-container-header">
+                <img id="logo" role="logo" src="assets\nc_flag.png" alt="Flag of North Carolina">
+                <h1>Cities of North Carolina</h1>
+            </div>
+            <hr>
+            <nav>
+                <ul>
+                    <li aria-current="page"><a href="index.html">Home</a></li>
+                    <li><a href="webform.html">Contact Us</a></li>
+                    <li id="dropdown">City Information &#9660;
+                        <ul class="dropdown-content">
+                            <a href="capitol-city.html">Raleigh 	&#9733</a>
+                            <a href="charlotte-city.html">Charlotte</a>
+                            <a href="wilmington-city.html">Wilmington</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main class="grid-container-home" role="grid">
+            <div class="grid_item" id="about">
+                <h2>About</h2>
+                <p>North Carolina is a state in the Southeastern region of the United States. At the <a href="https://data.census.gov/profile?g=040XX00US37" target="_blank">2020 census</a>, the state had a population of 10,439,388<a href="#index1"><sub>[1]</sub></a>. It is bordered by Virginia to the north, 
+                    the Atlantic Ocean to the east, South Carolina to the south, Georgia to the southwest, and Tennessee to the west.
+                     The state is the 28th-largest and ninth-most populous of the United States. North Carolina was inhabited by Carolina 
+                     Algonquian, Iroquoian, and Siouan speaking tribes of Native Americans prior to the arrival of Europeans (North Carolina 2025).
+                </p>
+                <aside>
+                <p>Over four hundred years ago, more than thirty Native American tribes were living in present-day North Carolina<a href="#index3"><sub>[3]</sub></a>.</p>
+                </aside>
+            </div>
+            <section class="grid_item" role="heading">
+                <h2>Raleigh, NC 	&#9733</h2>
+                <img src="assets\raleigh_home_page.jpg" alt="Raleigh, North Carolina city skyline">
+            </section>
+            <section class="grid_item">
+                <div>
+                    <p>Raleigh is the state's capital (North Carolina 2025).</p>
+                </div>
+                <div role="button">
+                    <button type="button" name="ralieghPage" id="raleighPage" value="ralieghPage" onclick="document.location='capitol-city.html'"><p>Learn More</p></button>
+                </div>
+            </section>
+            <section class="grid_item" role="heading">
+                <h2>Charlotte, NC</h2>
+                <img src="assets\charlotte_home_page.jpg" alt="Charlotte, North Carolina city overhead">
+            </section>
+            <section class="grid_item">
+                <div>
+                    <p>Charlotte is the most populous of the state's cities and one of the fastest growing cities in the United
+                         States (North Carolina 2025).
+                    </p>
+                </div>
+                <div role="button">
+                    <button type="button" name="charlottePage" id="charlottePage" value="charlottePage" onclick="document.location='charlotte-city.html'"><p>Learn More</p></button>
+                </div>
+            </section>
+            <section class="grid_item" role="heading">
+                <h2>Wilmington, NC</h2>
+                <img src="assets\wilmington_all_pages.jpg" alt="Wilmington, North Carolina city coastline">
+            </section>
+            <section class="grid_item">
+                <div>
+                    <p>Wilmington is a port city in New Hanover County, North Carolina, United States (Wilmington, North Carolina 2025).</p>
+                </div>
+                <div>
+                    <button type="button" name="wilmingtonPage" id="wilmingtonPage" value="wilmingtonPage" onclick="document.location='wilmington-city.html'"><p>Learn More</p></button>
+                </div>
+            </section>
+            <section>
+                <h2>References</h2><hr>
+                <ol>
+                    <li id="index1">North Carolina - Census Bureau profiles results. (2020a). https://data.census.gov/cedsci/profile?g=040XX00US37 </li>
+                    <li id="index2">Wikimedia Foundation. (2025l, November 9). North Carolina. Wikipedia. https://en.wikipedia.org/wiki/North_Carolina </li>
+                    <li id="index3">Claggett, S. (1995). Native American settlement of North Carolina. Home. https://www.ncpedia.org/history/early/native-settlement </li>
+                    <li id="index4">Wikimedia Foundation. (2025f, October 27). Wilmington, North Carolina. Wikipedia. https://en.wikipedia.org/wiki/Wilmington,_North_Carolina </li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <hr>
+            <p id="dateDiv"></p>
+        </footer>
+    </body>
+</html>

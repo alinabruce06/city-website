@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cities of North Carolina</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, intitial-scale=1.0">
+        <!-- Link to external CSS for all -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="assets\nc_flag.png">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="grid-container-header">
+                <img id="logo" role="logo" src="assets\nc_flag.png" alt="Flag of North Carolina">
+                <h1>Cities of North Carolina</h1>
+            </div>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li aria-current="page"><a href="webform.html">Contact Us</a></li>
+                    <li id="dropdown">City Information &#9660;
+                        <ul class="dropdown-content">
+                            <a href="capitol-city.html">Raleigh 	&#9733</a>
+                            <a href="charlotte-city.html">Charlotte</a>
+                            <a href="wilmington-city.html">Wilmington</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <section>
+                <h2>Contact Us With A Question</h2>
+                <div id="contact-us-hr"></div>
+                <p>Cities of North Carolina is a government-led organization that offers highly interactive and informative 
+                    answers to inquiries. This form is designed to educate anybody. Help on cities of North Carolina 
+                    is offered virtually and has been crafted to provide immediate information from experts.
+                </p>
+            </section>
+            <form class="grid-container-form">
+                <h3 class="grid_item_label">Submit A Question</h3>
+                <aside class="grid_item"><br>Form Tips:<br>Use your real name so we can address you properly. Double-check you email for typos. 
+                    Be clear and concise in your message.
+                </aside>
+                <label for="firstName" class="grid_item_label">First Name:
+                </label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" class="grid_item" required>
+                <label for="lastName" class="grid_item_label">Last Name:
+                </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name"class="grid_item" required>
+                <label for="enterEmail" class="grid_item_label">Email Address:
+                </label>
+                <input type="email" name="enterEmail" id="enterEmail" placeholder="Email" class="grid_item" required>
+                <label for="confirmEmail" class="grid_item_label">Confirm Email Address:
+                </label>
+                <input type="email" name="confirmEmail" id="confirmEmail" placeholder="Confirm Email" class="grid_item" required>
+                <label for="question" class="grid_item_label">Question:
+                </label>
+                <textarea type="text" name="question" id="question" placeholder="I have a question about..." class="grid_item" required></textarea>
+                <div>
+                    <button type="button" name="submit" id="submit" value="submit" onclick="compareInputs()"><p>Submit</p></button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <hr>
+            <p id="dateDiv"></p>
+        </footer>
+    </body>
+</html>
